@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  max-width: 600px;
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-family: poppins;
+  font-weight: 500;
+}
+.search-box{
+  background-color: #e45370;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px 0 30px 0;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+.search-box input{
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+.btn{
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  margin: 2px;
+  border: none;
+  color: #ddd;
+  background-color: #adadad9d;
+  border-radius: 5px;
+}
+.slash-btn:hover{
+  background-color: #ddd;
+  color: #000;
+}
+.user-card{
+  background-color: #e45370a8;
+  width: 100%;
+  /* min-height: 200px; */
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.user-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  border: 1px solid #000;
+  padding: 2px;
+  position: relative;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.user-img img{
+  border-radius: 50%;
+  object-fit:cover;
+}
+.user-img::after{
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.user-info{
+  /* width: 100%; */
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.info-top{
+  margin-bottom: 5px;
+}
+.user-id{
+  font-size: 1.2rem;
+}
+.location{
+  font-size: .9rem;
+  color: rgb(235, 235, 235);
+}
+.user-name{
+  font-family: cookie;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+.user-info h4, .user-stats > div > p, .created-date > p, .user-id, .location{
+  font-family: poppins;
+}
+.user-email, .user-bio, .blog, .user-stats{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+  transition: all .3s;
+  cursor: default;
+}
+.user-email:hover, .user-bio:hover, .blog:hover, .user-stats:hover{
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.user-email span, .user-bio span, .blog span, .user-stats > div > span, .created-date > span{
+  font-family: 'fira code';
+  font-size: .9rem;
+}
+.user-stats{
+  justify-content: space-between;
+  gap: 10px;
+}
+.user-stats > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-bottom{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+
+a{
+  /* text-decoration: none; */
+  color: #fff;
+  font-family: 'fira code';
+  word-spacing: -2.5px;
+}
+.repo-link a{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.486);
+  border: 1px solid rgba(221, 221, 221, 0.507);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: .8rem;
+}
+.repo-link a:hover{
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+/* this is not responsive */
+/* I will write code for making response as soon as possible */
